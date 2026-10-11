@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jouel Sonkeng | Trading, Finance & Intelligence Artificielle</title>
+<meta name="description" content="Jouel Sonkeng : trader, analyste financier et développeur de solutions IA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#0B1530;--night2:#121F42;--line:#26355F;--white:#fff;--soft:#F3F5FA;--gray:#8A94A8;--ink:#1A2340;--red:#FF6B6B;
+--head:'Sora',system-ui,sans-serif;--body:'Manrope',system-ui,-apple-system,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--night);color:var(--white);font:400 16px/1.6 var(--body);-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(11,21,48,.96);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 17px var(--head);text-decoration:none}.logo i{font-style:normal;color:var(--red)}
+nav{display:none;gap:22px}nav a{text-decoration:none;font-size:14px;color:#C9D0E0}nav a:hover{color:var(--white)}
+#mb{background:none;border:1px solid var(--line);color:var(--white);width:44px;height:44px;border-radius:8px;font-size:20px}
+#menu{display:none;flex-direction:column;border-top:1px solid var(--line);background:var(--night)}
+#menu.open{display:flex}#menu a{padding:15px 20px;text-decoration:none;border-bottom:1px solid var(--line)}
+@media(min-width:820px){nav{display:flex}#mb{display:none}#menu{display:none!important}}
+.hero{padding:64px 0 72px}
+.role{color:var(--gray);font-size:14px;margin:0 0 18px}
+.hero h1{font-size:clamp(36px,9vw,68px);font-weight:700;max-width:14ch}
+.hero .name{display:block;color:var(--red);font:500 clamp(18px,4.5vw,24px) var(--head);margin-bottom:14px}
+.hero p.lead{max-width:56ch;color:#C9D0E0;margin:22px 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:8px;border:1px solid var(--line);background:none;color:inherit;font:700 15px var(--body);text-decoration:none;cursor:pointer}
+.btn.pri{background:var(--red);border-color:var(--red);color:var(--night)}
+.btn[disabled],.btn.off{opacity:.45;cursor:not-allowed;pointer-events:none}
+section{padding:64px 0}
+section.light{background:var(--white);color:var(--ink)}
+section.light .muted{color:#5B6785}
+h2{font-size:clamp(26px,6vw,38px);margin-bottom:12px}
+.muted{color:var(--gray);max-width:60ch;margin:0 0 32px}
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.grid.g3{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px;background:var(--night2)}
+.light .card{background:var(--soft);border-color:#DDE2EE}
+.card h3{font-size:18px}.card p{margin:0;color:#C9D0E0;font-size:15px}.light .card p{color:#4A5572}
+.card .btn{margin-top:auto;align-self:flex-start;min-height:44px;font-size:14px}
+.light .card .btn{border-color:#C5CCDD;color:var(--ink)}
+.tag{font-size:13px;color:var(--gray)}
+.slot{border-style:dashed;background:transparent}
+.note{border-left:3px solid var(--red);padding:4px 0 4px 14px;color:#C9D0E0;font-size:14px;max-width:70ch;margin-top:28px}
+.light .note{color:#4A5572}
+form{display:grid;gap:14px;max-width:560px}
+label{font-size:14px;color:#C9D0E0;display:grid;gap:6px}
+input,select,textarea{font:400 16px var(--body);padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--night2);color:var(--white);width:100%}
+textarea{min-height:130px;resize:vertical}
+#status{font-size:14px;color:#C9D0E0;min-height:1.4em}
+footer{border-top:1px solid var(--line);padding:32px 0 40px;color:var(--gray);font-size:14px}
+.view{display:none}.view.on{display:block}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px;padding:0;list-style:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#top" data-home>Jouel <i>Sonkeng</i></a>
+  <nav><a href="#services" data-home>Services</a><a href="#projets" data-home>Projets</a><a href="#partenaires" data-home>Partenaires</a><a href="#ressources" data-home>Ressources</a><a href="#formations">Formations</a><a href="#contact">Contact</a></nav>
+  <button id="mb" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+ </div>
+ <div id="menu"><a href="#services" data-home>Services</a><a href="#projets" data-home>Projets</a><a href="#partenaires" data-home>Partenaires</a><a href="#ressources" data-home>Ressources</a><a href="#formations">Formations</a><a href="#contact">Contact</a></div>
+</header>
+
+<main id="top">
+<div class="view on" id="v-home">
+ <div class="wrap hero">
+  <p class="role">Trader | Analyste financier | Développeur de solutions IA</p>
+  <h1><span class="name">Jouel Sonkeng</span>Trading, Finance &amp; Intelligence Artificielle</h1>
+  <p class="lead">Je suis Jouel Sonkeng. Je développe mes compétences à la croisée des marchés financiers, de l'analyse et des technologies intelligentes, avec pour objectif de concevoir des solutions utiles aux traders et aux acteurs de l'écosystème financier.</p>
+  <div class="btns"><a class="btn pri" href="#services">Découvrir mes services</a><a class="btn" href="#projets">Explorer mes projets</a><a class="btn" href="#contact">Me contacter</a></div>
+ </div>
+
+ <section class="light" id="services"><div class="wrap">
+  <h2>Services</h2>
+  <p class="muted">Cinq domaines d'intervention. Le contenu exact des prestations est précisé sur demande.</p>
+  <div class="grid g3" id="svc"></div>
+ </div></section>
+
+ <section id="projets"><div class="wrap">
+  <h2>Projets et réalisations</h2>
+  <p class="muted">Trading, développements logiciels, outils d'IA et projets entrepreneuriaux.</p>
+  <div class="grid g3" id="prj"></div>
+ </div></section>
+
+ <section class="light" id="partenaires"><div class="wrap">
+  <h2>Plateformes et outils</h2>
+  <p class="muted">Plateformes et outils liés à mon activité.</p>
+  <div class="grid g3" id="prt"></div>
+  <p class="note">Transparence : certains liens peuvent être des liens affiliés. Si vous vous inscrivez via un tel lien, je peux percevoir une commission, sans frais supplémentaires pour vous. Le trading comporte un risque de perte en capital ; aucun résultat n'est garanti et ce site ne constitue pas un conseil en investissement.</p>
+ </div></section>
+
+ <section id="ressources"><div class="wrap">
+  <h2>Ressources éducatives</h2>
+  <p class="muted">Articles consacrés au trading, à l'analyse financière, à la programmation et à l'IA.</p>
+  <div class="grid" id="art"></div>
+ </div></section>
+
+ <section class="light"><div class="wrap">
+  <h2>Un besoin, une question ?</h2>
+  <p class="muted">Décrivez votre demande, je vous répondrai directement.</p>
+  <a class="btn pri" href="#contact">Me contacter</a>
+ </div></section>
+</div>
+
+<div class="view" id="v-formations"><div class="wrap" style="padding:64px 20px">
+ <h1 style="font-size:clamp(30px,7vw,48px)">Formations</h1>
+ <p class="muted" style="margin-top:16px">Les formations sont en préparation. Elles porteront sur le trading, l'analyse financière, la programmation et l'intelligence artificielle appliquée aux marchés. Les dates, contenus et tarifs seront annoncés ici lorsqu'ils seront confirmés.</p>
+ <a class="btn" href="#contact">Être informé du lancement</a>
+</div></div>
+
+<div class="view" id="v-contact"><div class="wrap" style="padding:64px 20px">
+ <h1 style="font-size:clamp(30px,7vw,48px)">Contact</h1>
+ <p class="muted" style="margin-top:16px">Demandez des informations sur mes services. Votre message s'ouvre dans votre application e-mail ou WhatsApp, et n'est envoyé qu'après votre validation.</p>
+ <ul class="links" id="soc"></ul>
+ <form id="f" novalidate>
+  <label>Nom<input id="n" autocomplete="name" required></label>
+  <label>Votre e-mail<input id="m" type="email" autocomplete="email"></label>
+  <label>Sujet<select id="s"></select></label>
+  <label>Message<textarea id="t" required></textarea></label>
+  <div class="btns"><button type="button" class="btn pri" id="bm">Envoyer par e-mail</button><button type="button" class="btn" id="bw">Envoyer par WhatsApp</button></div>
+  <div id="status" role="status"></div>
+ </form>
+</div></div>
+</main>
+
+<footer><div class="wrap">&copy; <span id="y"></span> Jouel Sonkeng. Le trading comporte des risques. Contenu à but informatif et éducatif.</div></footer>
+
+<script>
+/* ===== CONFIGURATION : modifiez uniquement cette section =====
+   Laissez "" pour masquer / désactiver un élément. */
+var CONFIG={
+ email:"",            // ex : "contact@exemple.com"
+ whatsapp:"",         // numéro international sans + ni espaces, ex : "237600000000"
+ socials:[],          // ex : [{nom:"LinkedIn",url:"https://..."}]
+ liens:{HFM:"",Weltrade:"",FTMO:"",FundedNext:"",Binance:"",TradingView:"",MetaTrader5:""},
+ projets:[],          // ex : [{titre:"",categorie:"",description:"",technos:"",lien:"",image:""}]
+ articles:[]          // ex : [{titre:"",resume:"",lien:""}]
+};
+var SERVICES=[
+ ["Trading et analyse des marchés","Lecture des marchés, méthode d'analyse et gestion du risque appliquées au trading."],
+ ["Analyse financière et quantitative","Études et approches chiffrées pour mieux comprendre les données financières."],
+ ["Indicateurs et robots de trading","Programmation d'indicateurs et de systèmes de trading automatisés."],
+ ["Intelligence artificielle et automatisation","Solutions d'IA et automatisations appliquées aux marchés financiers."],
+ ["Formation et ressources éducatives","Contenus pédagogiques sur le trading, l'analyse, la programmation et l'IA."]];
+var CATS=["Projets de trading","Développements logiciels","Outils d'intelligence artificielle","Projets entrepreneuriaux"];
+var PART=[
+ ["HFM","Courtier en ligne","HFM"],["Weltrade","Courtier en ligne","Weltrade"],
+ ["FTMO","Société de financement de traders","FTMO"],["FundedNext","Société de financement de traders","FundedNext"],
+ ["Binance","Plateforme d'échange de cryptomonnaies","Binance"],["TradingView","Plateforme de graphiques et d'analyse","TradingView"],
+ ["MetaTrader 5","Plateforme de trading","MetaTrader5"]];
+var TOPICS=["Trading","Analyse financière","Programmation","Intelligence artificielle"];
+
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.textContent=h;return e}
+function btn(txt,href,cls){var a=el("a","btn "+(cls||""),txt);if(href){a.href=href;if(/^http/.test(href)){a.target="_blank";a.rel="noopener noreferrer sponsored"}}else a.className+=" off";return a}
+
+var sel=document.getElementById("s");
+SERVICES.forEach(function(s){sel.appendChild(new Option(s[0],s[0]))});
+sel.appendChild(new Option("Formations","Formations"));sel.appendChild(new Option("Autre demande","Autre demande"));
+
+var svc=document.getElementById("svc");
+SERVICES.forEach(function(s){var c=el("div","card");c.appendChild(el("h3","",s[0]));c.appendChild(el("p","",s[1]));
+ var b=el("a","btn","Demander des informations");b.href="#contact";b.onclick=function(){setTimeout(function(){sel.value=s[0]},0)};c.appendChild(b);svc.appendChild(c)});
+
+var prj=document.getElementById("prj");
+if(CONFIG.projets.length){CONFIG.projets.forEach(function(p){var c=el("div","card");
+ if(p.image){var i=el("img");i.src=p.image;i.alt=p.titre||"";i.style.cssText="max-width:100%;border-radius:6px";c.appendChild(i)}
+ c.appendChild(el("h3","",p.titre||""));c.appendChild(el("span","tag",p.categorie||""));c.appendChild(el("p","",p.description||""));
+ if(p.technos)c.appendChild(el("span","tag",p.technos));if(p.lien)c.appendChild(btn("Voir le projet",p.lien));prj.appendChild(c)})}
+else CATS.forEach(function(k){var c=el("div","card slot");c.appendChild(el("h3","",k));c.appendChild(el("p","","Les premiers projets seront présentés ici."));prj.appendChild(c)});
+
+var prt=document.getElementById("prt");
+PART.forEach(function(p){var u=CONFIG.liens[p[2]],c=el("div","card");c.appendChild(el("h3","",p[0]));c.appendChild(el("span","tag",p[1]));
+ c.appendChild(btn(u?"Visiter "+p[0]:"Lien à configurer",u,""));prt.appendChild(c)});
+
+var art=document.getElementById("art");
+if(CONFIG.articles.length){CONFIG.articles.forEach(function(a){var c=el("div","card");c.appendChild(el("h3","",a.titre||""));c.appendChild(el("p","",a.resume||""));if(a.lien)c.appendChild(btn("Lire l'article",a.lien));art.appendChild(c)})}
+else{var c=el("div","card slot");c.appendChild(el("h3","","Articles à venir"));c.appendChild(el("p","","Thèmes prévus : "+TOPICS.join(", ")+"."));art.appendChild(c)}
+
+var soc=document.getElementById("soc");
+CONFIG.socials.forEach(function(s){var li=el("li");li.appendChild(btn(s.nom,s.url));soc.appendChild(li)});
+if(CONFIG.email){var li=el("li");li.appendChild(btn(CONFIG.email,"mailto:"+CONFIG.email));soc.appendChild(li)}
+if(CONFIG.whatsapp){var l2=el("li");l2.appendChild(btn("WhatsApp","https://wa.me/"+CONFIG.whatsapp));soc.appendChild(l2)}
+
+var st=document.getElementById("status"),bm=document.getElementById("bm"),bw=document.getElementById("bw");
+if(!CONFIG.email)bm.disabled=true;if(!CONFIG.whatsapp)bw.disabled=true;
+if(!CONFIG.email&&!CONFIG.whatsapp)st.textContent="Les coordonnées de contact ne sont pas encore renseignées.";
+function msg(){var n=document.getElementById("n").value.trim(),m=document.getElementById("m").value.trim(),t=document.getElementById("t").value.trim();
+ if(!n||!t){st.textContent="Renseignez votre nom et votre message.";return null}
+ return "Sujet : "+sel.value+"\nNom : "+n+(m?"\nE-mail : "+m:"")+"\n\n"+t}
+bm.onclick=function(){var b=msg();if(!b)return;location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Demande : "+sel.value)+"&body="+encodeURIComponent(b);st.textContent="Votre application e-mail s'ouvre : vérifiez puis envoyez le message."};
+bw.onclick=function(){var b=msg();if(!b)return;window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(b),"_blank","noopener");st.textContent="WhatsApp s'ouvre : vérifiez puis envoyez le message."};
+
+var views={formations:"v-formations",contact:"v-contact"},menu=document.getElementById("menu"),mb=document.getElementById("mb");
+function route(){var h=location.hash.slice(1),v=views[h]||"v-home";
+ document.querySelectorAll(".view").forEach(function(e){e.classList.toggle("on",e.id===v)});
+ menu.classList.remove("open");mb.setAttribute("aria-expanded","false");
+ if(v!=="v-home")window.scrollTo(0,0);else if(h&&h!=="top"){var t=document.getElementById(h);if(t)t.scrollIntoView()}else window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);route();
+mb.onclick=function(){var o=menu.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+document.getElementById("y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
